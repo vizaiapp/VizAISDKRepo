@@ -6,7 +6,7 @@ In the vizAI Dash, log in or create an account and navigate to the home page. Ta
 
 ## Installation
 
-Our SDK is distributed through Cocoapods and requires version 1.4.0 or above. The minimum iOS target is version 11.2. **NOTE**: We use Firebase for our backend so a pod install will install Firebase if it's not already installed. Upon starting the application, there may be print statements from Firebase but that is just the VizAISDK.
+Our SDK is distributed through Cocoapods and requires version 1.4.0 or above. The minimum iOS target is version 11.2. **NOTE**: We use Firebase for our backend so a pod install will install Firebase if it's not already available. Upon starting the application, there may be print statements from Firebase but that is just the VizAISDK.
 
 ![alt text][list] Add `pod 'VizAISDK'` to your Podfile.
 
