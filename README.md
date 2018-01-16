@@ -4,6 +4,12 @@
 
 In the vizAI Dash, log in or create an account and navigate to the home page. Tap the plus on the top, right-hand corner to add a new app to your account. Follow the steps to register the application. Those steps are repeated below, but make sure to enter your application's bundle identifier and select a model to analyze.
 
+### Finding Bundle Identifier
+
+If you're using XCode, then you can find your project's bundle identifier by clicking on the project and opening the General tab:
+
+![Alt Text](https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/FindBundleIdentifier.gif)
+
 ## Installation
 
 Our SDK is distributed through Cocoapods and requires version 1.4.0 or above. The minimum iOS target is version 11.2. **NOTE**: We use Firebase for our backend so a pod install will install Firebase if it's not already available. Upon starting the application, there may be print statements from Firebase but that is just the VizAISDK.
