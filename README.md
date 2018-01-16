@@ -17,7 +17,6 @@ Our SDK is distributed through Cocoapods and requires version 1.4.0 or above. Th
 In your project's AppDelegate, add the following line to configure the SDK:
 
 <pre>
-```
 import UIKit
 <b>import VizAISDK</b>
 
@@ -31,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         <b>VizAIApp.shared().configure(apiKey: "put your API key here")</b>
         return true
     }
-```
 </pre>
 
 ## Upload Screenshots
@@ -39,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 While recording, we upload a key corresponding to the view controller that is currently presented to the user. On the back-end, we match this key to a screenshot that you upload. In order to upload screenshots, add the following to the view controllers you wish to match:
 
 <pre>
-```
 <b>import VizAISDK</b>
 
 ...
@@ -49,7 +46,6 @@ While recording, we upload a key corresponding to the view controller that is cu
    
         <b>VizAIApp.shared().activate_screenshots()</b>
     }
-```
 </pre>
 
 Run your project in the Simulator or on device and a camera icon will appear in the top, right-hand corner of the view controllers where screenshots are activated. Simply tap on that icon and we'll have the screenshot!
