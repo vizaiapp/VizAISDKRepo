@@ -6,7 +6,7 @@ In the vizAI Dash, log in or create an account and navigate to the home page. Ta
 
 ## Installation
 
-Our SDK is distributed through Cocoapods and requires version 1.4.0 or above. To install, simple add `pod 'VizAISDK'` to your project's Podfile.
+Our SDK is distributed through Cocoapods and requires version 1.4.0 or above. To install, simple add `pod 'VizAISDK'` to your project's Podfile. The minimum iOS target is version 11.2. **NOTE**: We use Firebase for our backend so a pod install will install Firebase if it's not already installed. Upon starting the application, there may be print statements from Firebase but that is just the VizAISDK.
 
 ## Configuration
 
@@ -45,3 +45,5 @@ import VizAISDK
 ```
 
 Run your project in the Simulator or on device and a camera icon will appear in the top, right-hand corner of the view controllers where screenshots are activated. Simply tap on that icon and we'll have the screenshot!
+
+To remove the screenshots overlay, call `VizAIAPP.shared().deactivate_screenshots()`.
