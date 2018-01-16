@@ -45,3 +45,5 @@ import VizAISDK
 ```
 
 Run your project in the Simulator or on device and a camera icon will appear in the top, right-hand corner of the view controllers where screenshots are activated. Simply tap on that icon and we'll have the screenshot!
+
+To remove the screenshots overlay, call `VizAIAPP.shared().deactivate_screenshots()`.
