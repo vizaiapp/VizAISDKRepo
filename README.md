@@ -14,7 +14,8 @@ If you're using XCode, then you can find your project's bundle identifier by cli
 
 Now that you have the bundle id, add the app and select what models you want to run:
 
-![Alt Text](https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/appvideo.gif)
+<div style="text-align:center;"><img src="https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/appvideo.gif" width="200" height="355" align="middle"/></div>
+
 
 ## Installation
 
