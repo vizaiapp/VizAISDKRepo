@@ -77,7 +77,7 @@ You can have multiple calls to `start_recording`. The first call will start the 
 
 ### End Recording
 
-To end the recording, add `VizAIApp.shared().stop_recording()`. Make sure to add the stop recording, otherwise certain aggregate statistics will be unavailable!
+To end the recording, add `VizAIApp.shared().stop_recording()`. Make sure to add the call to stop recording, otherwise certain aggregate statistics will be unavailable!
 
 [build]: https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/ic_build.png
 [account]: https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/ic_account_box.png
