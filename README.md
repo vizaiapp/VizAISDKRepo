@@ -10,6 +10,12 @@ If you're using XCode, then you can find your project's bundle identifier by cli
 
 ![Alt Text](https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/FindBundleIdentifier.gif)
 
+### Adding the App
+
+Now that you have the bundle id, add the app and select what models you want to run:
+
+![Alt Text](https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/appvideo.gif)
+
 ## Installation
 
 Our SDK is distributed through Cocoapods and requires version 1.4.0 or above. The minimum iOS target is version 11.2. **NOTE**: We use Firebase for our backend so a pod install will install Firebase if it's not already available. Upon starting the application, there may be print statements from Firebase but that is just the VizAISDK.
