@@ -68,6 +68,8 @@ To remove the screenshots overlay, call `VizAIApp.shared().deactivate_screenshot
 
 ## Recording Sessions
 
+Recording sessions will run the models downloaded on the user's device and submit the results to Firebase for our analytics app to display. For now, each API key is limited to 100 sessions and each session is limited to 5 minutes.
+
 ### Start Recording
 
 Once your SDK is configured and the app is added in the Dash, we can start a recording session. Anywhere in your code, simply add `VizAIApp.shared().start_recording(sessionName: "Insert Session Name")` where you want it to start. The session name is optional, but it helps identify what process you're trying to observe. For example, we record during account creations and so we use `VizAIApp.shared().start_recording(sessionName: "Account Creation")`.
