@@ -68,7 +68,7 @@ To remove the screenshots overlay, call `VizAIApp.shared().deactivate_screenshot
 
 ## Recording Sessions
 
-Recording sessions will run the models downloaded on the user's device and submit the results to Firebase for our analytics app to display. For now, each API key is limited to 100 sessions and each session is limited to 5 minutes.
+Recording sessions will run the models downloaded on the user's device and submit the results to Firebase for our analytics app to display. For now, each API key is limited to *100 sessions* and each session is limited to *5 minutes*.
 
 ### Start Recording
 
