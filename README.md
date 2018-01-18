@@ -10,6 +10,13 @@ If you're using XCode, then you can find your project's bundle identifier by cli
 
 ![Alt Text](https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/FindBundleIdentifier.gif)
 
+### Adding the App
+
+Now that you have the bundle id, add the app and select what models you want to run:
+
+<div style="text-align:center;"><img src="https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/appvideo.gif" width="200" height="355" align="middle"/></div>
+
+
 ## Installation
 
 Our SDK is distributed through Cocoapods and requires version 1.4.0 or above. The minimum iOS target is version 11.2. **NOTE**: We use Firebase for our backend so a pod install will install Firebase if it's not already available. Upon starting the application, there may be print statements from Firebase but that is just the VizAISDK.
@@ -70,7 +77,7 @@ You can have multiple calls to `start_recording`. The first call will start the 
 
 ### End Recording
 
-To end the recording, add `VizAIApp.shared().stop_recording()`. Make sure to add the stop recording, otherwise certain aggregate statistics will be unavailable!
+To end the recording, add `VizAIApp.shared().stop_recording()`. Make sure to add the call to stop recording, otherwise certain aggregate statistics will be unavailable!
 
 [build]: https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/ic_build.png
 [account]: https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/ic_account_box.png
