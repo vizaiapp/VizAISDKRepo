@@ -1,0 +1,6 @@
+framework module Pods_SignUpExample {
+  umbrella header "Pods-SignUpExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

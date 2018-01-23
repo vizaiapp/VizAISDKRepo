@@ -1,0 +1,11 @@
+framework module VizAISDK {
+  umbrella header "VizAISDK.h"
+
+  export *
+  module * { export * }
+}
+
+module VizAISDK.Swift {
+    header "VizAISDK-Swift.h"
+    requires objc
+}

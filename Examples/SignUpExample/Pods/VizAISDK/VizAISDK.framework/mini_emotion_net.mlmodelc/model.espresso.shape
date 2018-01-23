@@ -1,0 +1,202 @@
+{
+  "layer_shapes" : {
+    "max_pooling2d_1_output" : {
+      "k" : 16,
+      "w" : 22,
+      "n" : 1,
+      "h" : 22
+    },
+    "batch_normalization_8_output" : {
+      "k" : 32,
+      "w" : 22,
+      "n" : 1,
+      "h" : 22
+    },
+    "add_2_output_intermin_" : {
+      "k" : 32,
+      "w" : 11,
+      "n" : 1,
+      "h" : 11
+    },
+    "conv2d_7_output" : {
+      "k" : 7,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "activation_5_output_intermin_" : {
+      "k" : 64,
+      "w" : 11,
+      "n" : 1,
+      "h" : 11
+    },
+    "add_4_output" : {
+      "k" : 128,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "batch_normalization_3_output" : {
+      "k" : 16,
+      "w" : 22,
+      "n" : 1,
+      "h" : 22
+    },
+    "output1" : {
+      "k" : 7,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "batch_normalization_11_output" : {
+      "k" : 64,
+      "w" : 11,
+      "n" : 1,
+      "h" : 11
+    },
+    "activation_5_output" : {
+      "k" : 64,
+      "w" : 11,
+      "n" : 1,
+      "h" : 11
+    },
+    "activation_3_output_intermin_" : {
+      "k" : 16,
+      "w" : 44,
+      "n" : 1,
+      "h" : 44
+    },
+    "add_3_output" : {
+      "k" : 64,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "batch_normalization_5_output" : {
+      "k" : 16,
+      "w" : 44,
+      "n" : 1,
+      "h" : 44
+    },
+    "activation_2_output" : {
+      "k" : 8,
+      "w" : 44,
+      "n" : 1,
+      "h" : 44
+    },
+    "add_3_output_intermin_" : {
+      "k" : 64,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "image" : {
+      "k" : 1,
+      "w" : 48,
+      "n" : 1,
+      "h" : 48
+    },
+    "activation_6_output_intermin_" : {
+      "k" : 128,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "activation_6_output" : {
+      "k" : 128,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "add_2_output" : {
+      "k" : 32,
+      "w" : 11,
+      "n" : 1,
+      "h" : 11
+    },
+    "max_pooling2d_3_output" : {
+      "k" : 64,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "batch_normalization_12_output" : {
+      "k" : 128,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "activation_3_output" : {
+      "k" : 16,
+      "w" : 44,
+      "n" : 1,
+      "h" : 44
+    },
+    "batch_normalization_9_output" : {
+      "k" : 64,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "global_average_pooling2d_1_output" : {
+      "k" : 7,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "batch_normalization_14_output" : {
+      "k" : 128,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    },
+    "activation_4_output_intermin_" : {
+      "k" : 32,
+      "w" : 22,
+      "n" : 1,
+      "h" : 22
+    },
+    "max_pooling2d_2_output" : {
+      "k" : 32,
+      "w" : 11,
+      "n" : 1,
+      "h" : 11
+    },
+    "add_1_output_intermin_" : {
+      "k" : 16,
+      "w" : 22,
+      "n" : 1,
+      "h" : 22
+    },
+    "activation_4_output" : {
+      "k" : 32,
+      "w" : 22,
+      "n" : 1,
+      "h" : 22
+    },
+    "add_1_output" : {
+      "k" : 16,
+      "w" : 22,
+      "n" : 1,
+      "h" : 22
+    },
+    "activation_2_output_intermin_" : {
+      "k" : 8,
+      "w" : 44,
+      "n" : 1,
+      "h" : 44
+    },
+    "batch_normalization_6_output" : {
+      "k" : 32,
+      "w" : 11,
+      "n" : 1,
+      "h" : 11
+    },
+    "activation_1_output" : {
+      "k" : 5,
+      "w" : 46,
+      "n" : 1,
+      "h" : 46
+    }
+  }
+}
