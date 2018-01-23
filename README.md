@@ -85,6 +85,10 @@ You can have multiple calls to `start_recording`. The first call will start the 
 
 To end the recording, add `VizAIApp.shared().stop_recording()`. Make sure to add the call to stop recording, otherwise certain aggregate statistics will be unavailable!
 
+## Example Project
+
+In this repo, we have an example project called SignUpExample. There, we have a simple sign-up process (it doesn't actually upload any info) to show how the service might be used. However, the sign-up process isn't very user-friendly! If you run the code, you'll see what we mean. And if you run it with the SDK, you can see the results of your session in the Dash!
+
 [build]: https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/ic_build.png
 [account]: https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/ic_account_box.png
 [assessment]: https://github.com/vizaiapp/VizAISDKRepo/blob/master/READMEResources/ic_assessment.png
