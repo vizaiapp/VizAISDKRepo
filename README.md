@@ -1,5 +1,9 @@
 # VizAISDK
 
+[![Version](https://img.shields.io/cocoapods/v/VizAISDK.svg?style=flat)](http://cocoapods.org/pods/VizAISDK)
+[![License](https://img.shields.io/cocoapods/l/VizAISDK.svg?style=flat)](http://cocoapods.org/pods/VizAISDK)
+[![Platform](https://img.shields.io/cocoapods/p/VizAISDK.svg?style=flat)](http://cocoapods.org/pods/VizAISDK)
+
 ## Account Set-up
 
 In the vizAI Dash, log in or create an account and navigate to the home page. Tap the plus on the top, right-hand corner to add a new app to your account. Follow the steps to register the application. Those steps are repeated below, but make sure to enter your application's bundle identifier and select a model to analyze.
@@ -67,6 +71,8 @@ To remove the screenshots overlay, call `VizAIApp.shared().deactivate_screenshot
 
 
 ## Recording Sessions
+
+Recording sessions will run the models downloaded on the user's device and submit the results to Firebase for our analytics app to display. For now, each API key is limited to *100 sessions* and each session is limited to *5 minutes*.
 
 ### Start Recording
 
