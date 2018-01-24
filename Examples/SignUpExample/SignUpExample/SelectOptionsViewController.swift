@@ -40,7 +40,7 @@ class SelectOptionsViewController: UIViewController {
     @IBAction func optionButtonPressed(_ sender: Any) {
         numberTimesOptionPressed += 1
         if numberTimesOptionPressed >= 2 {
-            VizAIApp.shared().stop_recording()
+            VizAIApp.shared().stopRecording()
         }
         let randomIndex = Int(arc4random()) % messages.count
         let randomMessage = messages[randomIndex]

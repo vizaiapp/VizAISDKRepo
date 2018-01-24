@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        VizAIApp.shared().start_recording(sessionName: "Sign Up Example")
+        VizAIApp.shared().startRecording(sessionName: "Sign Up Example")
     }
 
     override func didReceiveMemoryWarning() {
