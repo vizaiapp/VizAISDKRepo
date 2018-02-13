@@ -51,6 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## Upload Screenshots
 
+### Manual Upload
+
 While recording, we upload a key corresponding to the view controller that is currently presented to the user. On the back-end, we match this key to a screenshot that you upload. In order to upload screenshots, add the following to the view controllers you wish to match:
 
 <pre>
@@ -61,14 +63,31 @@ While recording, we upload a key corresponding to the view controller that is cu
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
    
-        <b>VizAIApp.shared().activate_screenshots()</b>
+        <b>VizAIApp.shared().overlayScreenshotButton()</b>
     }
 </pre>
 
 Run your project in the Simulator or on device and a camera icon will appear in the top, right-hand corner of the view controllers where screenshots are activated. Simply tap on that icon and we'll have the screenshot!
 
-To remove the screenshots overlay, call `VizAIApp.shared().deactivate_screenshots()`.
+To remove the screenshots overlay, call `VizAIApp.shared().removeScreenshotButton()`.
 
+### Automatic Upload
+
+To automatically upload screenshots, add the following to the view controller you want to start uploading in:
+
+<pre>
+<b>import VizAISDK</b>
+
+...
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+   
+        <b>VizAIApp.shared().activateScreenshots()</b>
+    }
+</pre>
+
+Every second, it will check to see if the view controller changed and, if it did, it will upload a screenshot for that new view controller. To deactivate this mode, call `VizAIApp.shared().deactivateScreenshots()`.
 
 ## Recording Sessions
 
@@ -76,14 +95,14 @@ Recording sessions will run the models downloaded on the user's device and submi
 
 ### Start Recording
 
-Once your SDK is configured and the app is added in the Dash, we can start a recording session. Anywhere in your code, simply add `VizAIApp.shared().start_recording(sessionName: "Insert Session Name")` where you want it to start. The session name is optional, but it helps identify what process you're trying to observe. For example, we record during account creations and so we use `VizAIApp.shared().start_recording(sessionName: "Account Creation")`.
+Once your SDK is configured and the app is added in the Dash, we can start a recording session. Anywhere in your code, simply add `VizAIApp.shared().startRecording(sessionName: "Insert Session Name")` where you want it to start. The session name is optional, but it helps identify what process you're trying to observe. For example, we record during account creations and so we use `VizAIApp.shared().startRecording(sessionName: "Account Creation")`.
 
-You can have multiple calls to `start_recording`. The first call will start the camera recording, and the subsequent calls will simply update the session name.
+You can have multiple calls to `startRecording`. The first call will start the camera recording, and the subsequent calls will simply update the session name.
 
 
 ### End Recording
 
-To end the recording, add `VizAIApp.shared().stop_recording()`. Make sure to add the call to stop recording, otherwise certain aggregate statistics will be unavailable!
+To end the recording, add `VizAIApp.shared().stopRecording()`. Make sure to add the call to stop recording, otherwise certain aggregate statistics will be unavailable!
 
 ## Example Project
 
